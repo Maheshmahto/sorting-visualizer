@@ -161,7 +161,7 @@ body {
 
 }
 .size{
-    padding: 8px;
+    padding: 8px 15px;
     border-radius: 8px;
     margin-left: 30px;
     color: black;
@@ -231,7 +231,7 @@ body {
     background-color: #3838ff;
 }
 
-.button4 {
+/* .button4 {
     width: 160px;
     height: 60px;
     color: #fff;
@@ -248,8 +248,8 @@ body {
 }
 .button4:hover {
     background:#121e60;
-    /* background-color: ; */
-}
+    /* background-color: ; 
+} */
 
 .controls {
     margin: 20px;
@@ -273,6 +273,7 @@ body {
 
     border: 1px solid #ddd;
     padding: 10px;
+
 }
 
 .bar {
@@ -280,9 +281,24 @@ body {
     background-color: #4CAF50;
     width: 20px;
     transition: height 0.5s;
+    height: 90%;
 }
 
 /* .sorted{
     background-color: #4CAF50;
  
 } */
+@media screen and (max-width :600px) {
+    .controls{
+        display: grid;
+       /* border: 1px solid wheat; */
+      grid-template-columns: 1fr 1fr;
+    }
+    #generate{
+        z-index: -1;
+    }
+    .bar{
+        height: 100%;
+    }
+    
+}
