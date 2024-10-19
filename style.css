@@ -288,6 +288,7 @@ body {
     background-color: #4CAF50;
  
 } */
+ /* media query */
 @media screen and (max-width :600px) {
     .controls{
         display: grid;
